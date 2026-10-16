@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your profile | Orbit</title>
+  <link rel="stylesheet" href="../src/css/style.css">
+  <script src="../src/js/main.js" defer></script>
+</head>
+<body data-page="profile">
+  <header class="topbar">
+    <a class="brand" href="../index.html">orbit<span>.</span></a>
+    <nav class="top-nav" aria-label="Main navigation">
+      <a href="../index.html">Feed</a>
+      <a href="explore.html">Explore</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="top-actions">
+      <a class="avatar avatar-small" href="profile.html" data-member-avatar aria-label="Your profile">?</a>
+      <button class="button button-small button-outline" type="button" data-logout hidden>Log out</button>
+    </div>
+  </header>
+
+  <main class="narrow-layout">
+    <section class="profile-hero card">
+      <div class="profile-avatar" data-current-avatar>?</div>
+      <p class="eyebrow">YOUR ORBIT</p>
+      <h1 id="profile-name">Your profile</h1>
+      <p class="muted" id="profile-email"></p>
+      <p class="profile-bio">A little corner of the internet to call your own.</p>
+      <a class="button button-outline" href="../index.html">Back to the feed</a>
+    </section>
+    <section class="profile-posts">
+      <div class="feed-toolbar">
+        <h2>Your posts</h2>
+        <span class="muted" id="profile-post-count"></span>
+      </div>
+      <div id="profile-post-list" class="post-list" aria-live="polite"></div>
+    </section>
+  </main>
+</body>
+</html>

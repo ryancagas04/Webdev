@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Join Orbit</title>
+  <link rel="stylesheet" href="../src/css/style.css">
+  <script src="../src/js/main.js" defer></script>
+</head>
+<body data-page="signup">
+  <header class="topbar">
+    <a class="brand" href="../index.html">orbit<span>.</span></a>
+    <nav class="top-nav" aria-label="Main navigation">
+      <a href="../index.html">Feed</a>
+      <a href="explore.html">Explore</a>
+      <a href="about.html">About</a>
+    </nav>
+    <a class="button button-small button-outline" href="login.html">Log in</a>
+  </header>
+
+  <main class="auth-layout">
+    <section class="auth-promo">
+      <p class="eyebrow">FIND YOUR PEOPLE</p>
+      <h1>Make a little space for yourself.</h1>
+      <p>Start conversations, share small wins, and build your own community.</p>
+      <div class="promo-orbit" aria-hidden="true">✦</div>
+    </section>
+    <section class="auth-card card">
+      <p class="eyebrow">YOUR ORBIT STARTS HERE</p>
+      <h2>Create an account</h2>
+      <p class="muted">Join with a name, email, and password.</p>
+      <form id="signup-form" class="form-stack">
+        <label for="signup-name">Display name</label>
+        <input id="signup-name" name="name" type="text" maxlength="40"
+          autocomplete="name" required>
+        <label for="signup-email">Email address</label>
+        <input id="signup-email" name="email" type="email"
+          autocomplete="email" required>
+        <label for="signup-password">Password</label>
+        <input id="signup-password" name="password" type="password"
+          minlength="6" autocomplete="new-password" required>
+        <p class="form-hint">Use at least 6 characters.</p>
+        <p class="form-message" id="signup-message" role="status"></p>
+        <button class="button button-wide" type="submit">Create my account</button>
+      </form>
+      <p class="auth-switch">Already have an account? <a href="login.html">Log in</a></p>
+    </section>
+  </main>
+</body>
+</html>

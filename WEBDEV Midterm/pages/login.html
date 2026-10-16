@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in | Orbit</title>
+  <link rel="stylesheet" href="../src/css/style.css">
+  <script src="../src/js/main.js" defer></script>
+</head>
+<body data-page="login">
+  <header class="topbar">
+    <a class="brand" href="../index.html">orbit<span>.</span></a>
+    <nav class="top-nav" aria-label="Main navigation">
+      <a href="../index.html">Feed</a>
+      <a href="explore.html">Explore</a>
+      <a href="about.html">About</a>
+    </nav>
+    <a class="button button-small button-outline" href="signup.html">Create account</a>
+  </header>
+
+  <main class="auth-layout">
+    <section class="auth-promo">
+      <p class="eyebrow">A SMALLER, SOFTER SOCIAL SPACE</p>
+      <h1>Good to see you again.</h1>
+      <p>Log in to pick up the conversation and see what's new in your orbit.</p>
+      <div class="promo-orbit" aria-hidden="true">✦</div>
+    </section>
+    <section class="auth-card card">
+      <p class="eyebrow">WELCOME BACK</p>
+      <h2>Log in</h2>
+      <p class="muted">Use the details you signed up with.</p>
+      <form id="login-form" class="form-stack">
+        <label for="login-email">Email address</label>
+        <input id="login-email" name="email" type="email" autocomplete="email" required>
+        <label for="login-password">Password</label>
+        <input id="login-password" name="password" type="password"
+          autocomplete="current-password" required>
+        <p class="form-message" id="login-message" role="status"></p>
+        <button class="button button-wide" type="submit">Log in to Orbit</button>
+      </form>
+      <p class="auth-switch">New here? <a href="signup.html">Create an account</a></p>
+    </section>
+  </main>
+</body>
+</html>

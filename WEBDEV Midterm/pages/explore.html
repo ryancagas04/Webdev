@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Explore | Orbit</title>
+  <link rel="stylesheet" href="../src/css/style.css">
+  <script src="../src/js/main.js" defer></script>
+</head>
+<body data-page="explore">
+  <header class="topbar">
+    <a class="brand" href="../index.html">orbit<span>.</span></a>
+    <nav class="top-nav" aria-label="Main navigation">
+      <a href="../index.html">Feed</a>
+      <a class="active" href="explore.html">Explore</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="top-actions">
+      <a class="button button-small button-outline" href="login.html" data-guest>Log in</a>
+      <a class="button button-small" href="signup.html" data-guest>Join Orbit</a>
+      <a class="avatar avatar-small" href="profile.html" data-member-avatar aria-label="Your profile">?</a>
+      <button class="button button-small button-outline" type="button" data-logout hidden>Log out</button>
+    </div>
+  </header>
+
+  <main class="narrow-layout">
+    <section class="explore-heading">
+      <p class="eyebrow">A LITTLE INSPIRATION</p>
+      <h1>Explore Orbit</h1>
+      <p class="muted">Browse recent community posts and find something worth a conversation.</p>
+    </section>
+    <div id="explore-list" class="post-list" aria-live="polite"></div>
+  </main>
+</body>
+</html>
